@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shah Rukh Khan - Entry-Level Cybersecurity Analyst Portfolio</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Inter font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        /* Apply Inter font and dark mode globally */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0d0d0d; /* Very dark background */
+            color: #f3f4f6;
+            scroll-behavior: smooth;
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #10b981; /* Emerald Green scrollbar accent */
+            border-radius: 4px;
+        }
+        .project-card {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(16, 185, 129, 0.3); /* Green hover glow */
+        }
+        .hero-title-gradient {
+            background-image: linear-gradient(45deg, #10b981, #06b6d4); /* Emerald and Cyan blend */
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .tag {
+            display: inline-block;
+            padding: 4px 10px;
+            margin: 4px;
+            border-radius: 9999px;
+            font-size: 0.875rem;
+            font-weight: 500;
+            background-color: #1f2937; /* Dark gray */
+            color: #10b981; /* Emerald text */
+            border: 1px solid #10b98133;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header & Navigation -->
+    <header class="sticky top-0 z-50 bg-gray-900/95 backdrop-blur-sm shadow-xl border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-16">
+            <a href="#" class="text-2xl font-extrabold tracking-tight text-white">
+                <span class="text-emerald-400">Cyber</span>Portfolio
+            </a>
+            <nav class="space-x-6">
+                <a href="#projects" class="text-gray-300 hover:text-emerald-400 transition duration-150 font-medium">Projects</a>
+                <a href="#skills" class="text-gray-300 hover:text-emerald-400 transition duration-150 font-medium">Skills</a>
+                <a href="#certs" class="text-gray-300 hover:text-emerald-400 transition duration-150 font-medium">Certs</a>
+                <a href="#contact" class="hidden sm:inline-block text-gray-300 hover:text-emerald-400 transition duration-150 font-medium">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="min-h-[85vh] flex items-center justify-center text-center pt-20 pb-10">
+            <div class="max-w-4xl mx-auto px-4">
+                <p class="text-lg text-emerald-400 font-semibold uppercase tracking-widest mb-4">
+                    Entry-Level Security Analyst | Coursera Certified
+                </p>
+                <h1 class="text-6xl sm:text-7xl lg:text-8xl font-black mb-6 leading-tight">
+                    Hi, I'm <span class="hero-title-gradient">Shah Rukh Khan</span>
+                </h1>
+                <p class="text-xl sm:text-2xl text-gray-300 max-w-3xl mx-auto mb-10">
+                    Motivated analyst with foundational skills in threat detection, incident response, and network security, ready to contribute to a Security Operations Center (SOC) environment.
+                </p>
+                <a href="#projects" class="inline-block px-10 py-4 bg-emerald-600 text-white font-bold text-lg rounded-full shadow-lg hover:bg-emerald-500 transition duration-300 transform hover:scale-105">
+                    View Practical Work
+                </a>
+            </div>
+        </section>
+        
+        <!-- About Section (Updated Content) -->
+        <section id="about" class="py-24 bg-gray-900 border-t border-gray-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-5xl font-extrabold mb-12 text-center text-white">About My Background</h2>
+                
+                <div class="flex flex-col lg:flex-row items-center lg:space-x-12">
+                    <div class="lg:w-1/3 mb-8 lg:mb-0">
+                        <!-- Profile picture of Shah Rukh Khan -->
+                        <img 
+                            src="uploaded:1000029223.jpg-74cb88eb-c536-476e-a2a4-c332ad0d68cb" 
+                            alt="Shah Rukh Khan Profile Picture" 
+                            class="w-64 h-64 lg:w-80 lg:h-80 object-cover rounded-full mx-auto shadow-2xl border-4 border-emerald-400/50"
+                            onerror="this.onerror=null;this.src='https://placehold.co/400x400/475569/94a3b8?text=Profile+Image+Failed+to+Load'"
+                        >
+                    </div>
+                    <div class="lg:w-2/3 text-lg space-y-4 text-gray-300">
+                        <p>
+                            I am an aspiring Cybersecurity Analyst with five Coursera certificates and a strong drive to enter the field. My specialization training provided **foundational expertise in network defense, vulnerability management, and log analysis.**
+                        </p>
+                        <p>
+                            I possess practical experience using essential tools like **Wireshark, Nmap, and Linux command line interface (CLI)**, allowing me to translate theoretical knowledge into actionable security tasks. I'm eager to contribute immediately to threat detection and incident response efforts in a Security Operations Center (SOC) or entry-level role.
+                        </p>
+                        <p>
+                            I am focused on continuous skill development and committed to protecting organizational assets through proactive security monitoring.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section (Updated Content) -->
+        <section id="projects" class="py-24">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-5xl font-extrabold mb-16 text-center text-white">Hands-On Security Projects</h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    
+                    <!-- Project Card 1: Phishing Analysis -->
+                    <div class="bg-gray-800 rounded-xl overflow-hidden project-card">
+                        <img 
+                            src="https://placehold.co/800x450/1e40af/ffffff?text=Phishing+Email+Report" 
+                            alt="Phishing Analysis Screenshot" 
+                            class="w-full h-48 object-cover"
+                            onerror="this.onerror=null;this.src='https://placehold.co/800x450/475569/94a3b8?text=Phishing+Analysis+Project'"
+                        >
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-emerald-400 mb-2">Phishing Email Incident Triage</h3>
+                            <p class="text-gray-400 text-sm mb-4">Incident Response, Email Security, Threat Hunting</p>
+                            <p class="text-gray-300 mb-4 text-base">
+                                **Simulated an incident** by analyzing a spear-phishing email's headers, identifying malicious links/attachments, and detailing the full **triage and containment process** as per the IR lifecycle.
+                            </p>
+                            <a href="[Link to your PDF report or GitHub Readme]" class="text-emerald-400 hover:text-emerald-300 font-semibold flex items-center">
+                                View Full Report 
+                                <span class="ml-1 text-xl">&#8594;</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 2: Network Traffic Monitoring -->
+                    <div class="bg-gray-800 rounded-xl overflow-hidden project-card">
+                        <img 
+                            src="https://placehold.co/800x450/dc2626/ffffff?text=Wireshark+Packet+Capture" 
+                            alt="Wireshark Interface Screenshot" 
+                            class="w-full h-48 object-cover"
+                            onerror="this.onerror=null;this.src='https://placehold.co/800x450/475569/94a3b8?text=Network+Monitoring+Project'"
+                        >
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-emerald-400 mb-2">Malware Traffic Analysis (Wireshark)</h3>
+                            <p class="text-gray-400 text-sm mb-4">Network Security, Wireshark, Protocol Analysis</p>
+                            <p class="text-300 mb-4 text-base">
+                                Utilized **Wireshark** to analyze packet captures from a controlled malware infection. Successfully **identified C2 communication** by filtering suspicious DNS, HTTP, and specific protocol traffic.
+                            </p>
+                            <a href="[Link to PCAP Analysis or Documentation]" class="text-emerald-400 hover:text-emerald-300 font-semibold flex items-center">
+                                View Documentation 
+                                <span class="ml-1 text-xl">&#8594;</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 3: Vulnerability Scanning -->
+                    <div class="bg-gray-800 rounded-xl overflow-hidden project-card">
+                        <img 
+                            src="https://placehold.co/800x450/f59e0b/ffffff?text=Vulnerability+Scan+Dashboard" 
+                            alt="Nessus or OpenVAS Dashboard Screenshot" 
+                            class="w-full h-48 object-cover"
+                            onerror="this.onerror=null;this.src='https://placehold.co/800x450/475569/94a3b8?text=Vulnerability+Scanning+Project'"
+                        >
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-emerald-400 mb-2">Vulnerability Assessment & Reporting</h3>
+                            <p class="text-gray-400 text-sm mb-4">Vulnerability Management, Risk Prioritization</p>
+                            <p class="text-gray-300 mb-4 text-base">
+                                Performed a security scan on a target using **Nmap/OpenVAS**, generated a detailed report, and **prioritized the top 5 vulnerabilities** based on CVSS score for management review.
+                            </p>
+                            <a href="[Link to Audit Summary and Report]" class="text-emerald-400 hover:text-emerald-300 font-semibold flex items-center">
+                                View Audit Summary 
+                                <span class="ml-1 text-xl">&#8594;</span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills & Tools Section -->
+        <section id="skills" class="py-24 bg-gray-900 border-t border-gray-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-5xl font-extrabold mb-12 text-white">Technical Arsenal</h2>
+                <p class="text-xl text-gray-300 mb-12 max-w-3xl mx-auto">
+                    My foundational toolkit covers essential domains for a successful entry-level analyst.
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-left">
+                    
+                    <!-- Domain 1: Monitoring & Analysis -->
+                    <div class="bg-gray-800 p-8 rounded-xl shadow-lg border border-gray-700 hover:border-emerald-500 transition duration-300">
+                        <h4 class="text-2xl font-bold mb-4 text-emerald-400">Monitoring & Analysis</h4>
+                        <div class="flex flex-wrap">
+                            <span class="tag">Wireshark</span>
+                            <span class="tag">Splunk (Basic)</span>
+                            <span class="tag">Network Traffic Analysis</span>
+                            <span class="tag">Log Analysis</span>
+                            <span class="tag">Intrusion Detection (IDS)</span>
+                        </div>
+                    </div>
+
+                    <!-- Domain 2: Incident Response & Vuln Mgmt -->
+                    <div class="bg-gray-800 p-8 rounded-xl shadow-lg border border-gray-700 hover:border-emerald-500 transition duration-300">
+                        <h4 class="text-2xl font-bold mb-4 text-emerald-400">Incident Response & VM</h4>
+                        <div class="flex flex-wrap">
+                            <span class="tag">Incident Lifecycle</span>
+                            <span class="tag">Nmap</span>
+                            <span class="tag">Vulnerability Scanning (Nessus/OpenVAS)</span>
+                            <span class="tag">Forensics Foundations</span>
+                            <span class="tag">Phishing Triage</span>
+                        </div>
+                    </div>
+
+                    <!-- Domain 3: Operating Systems & Scripting -->
+                    <div class="bg-gray-800 p-8 rounded-xl shadow-lg border border-gray-700 hover:border-emerald-500 transition duration-300">
+                        <h4 class="text-2xl font-bold mb-4 text-emerald-400">Systems & Scripting</h4>
+                        <div class="flex flex-wrap">
+                            <span class="tag">Linux CLI</span>
+                            <span class="tag">Windows/PowerShell</span>
+                            <span class="tag">Python (Scripting)</span>
+                            <span class="tag">Virtual Machines (VMware/VirtualBox)</span>
+                            <span class="tag">Cloud Security (Basic)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certificates Section -->
+        <section id="certs" class="py-24">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-5xl font-extrabold mb-12 text-white">Certificates & Credentials</h2>
+                <p class="text-xl text-gray-300 mb-12 max-w-3xl mx-auto">
+                    My successful completion of the **Coursera Cybersecurity Specialization** demonstrates proficiency in core analyst domains.
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-left max-w-4xl mx-auto">
+                    
+                    <!-- Certificate 1: Foundation of cybersecurity -->
+                    <div class="bg-gray-800 p-6 rounded-xl border-l-4 border-emerald-500 shadow-md">
+                        <h3 class="text-xl font-bold text-white">1. Foundations of Cybersecurity</h3>
+                        <p class="text-gray-400 mb-3">Coursera (Google/IBM/Equivalent)</p>
+                        <a href="https://www.coursera.org/account/accomplishments/verify/LD99GM43ATFN?utm_source%3Dandroid%26utm_medium%3Dcertificate%26utm_content%3Dcert_image%26utm_campaign%3Dsharing_cta%26utm_product%3Dcourse" target="_blank" class="text-emerald-400 hover:text-emerald-300 text-sm font-semibold">Verify Credential &#8599;</a>
+                    </div>
+
+                    <!-- Certificate 2: Play it safe -->
+                    <div class="bg-gray-800 p-6 rounded-xl border-l-4 border-emerald-500 shadow-md">
+                        <h3 class="text-xl font-bold text-white">2. Play It Safe: Manage Security Risks</h3>
+                        <p class="text-gray-400 mb-3">Coursera (Google/IBM/Equivalent)</p>
+                        <a href="https://www.coursera.org/account/accomplishments/verify/6KZLWEPKK96M?utm_source%3Dandroid%26utm_medium%3Dcertificate%26utm_content%3Dcert_image%26utm_campaign%3Dsharing_cta%26utm_product%3Dcourse" target="_blank" class="text-emerald-400 hover:text-emerald-300 text-sm font-semibold">Verify Credential &#8599;</a>
+                    </div>
+
+                    <!-- Certificate 3: Network and network security -->
+                    <div class="bg-gray-800 p-6 rounded-xl border-l-4 border-emerald-500 shadow-md">
+                        <h3 class="text-xl font-bold text-white">3. Network and Network Security</h3>
+                        <p class="text-gray-400 mb-3">Coursera (Google/IBM/Equivalent)</p>
+                        <a href="https://www.coursera.org/account/accomplishments/verify/9AGHGU5A5ZE3?utm_source%3Dandroid%26utm_medium%3Dcertificate%26utm_content%3Dcert_image%26utm_campaign%3Dsharing_cta%26utm_product%3Dcourse" target="_blank" class="text-emerald-400 hover:text-emerald-300 text-sm font-semibold">Verify Credential &#8599;</a>
+                    </div>
+
+                    <!-- Certificate 4: Task with linux and sql -->
+                    <div class="bg-gray-800 p-6 rounded-xl border-l-4 border-emerald-500 shadow-md">
+                        <h3 class="text-xl font-bold text-white">4. Linux and SQL for Security Tasks</h3>
+                        <p class="text-gray-400 mb-3">Coursera (Google/IBM/Equivalent)</p>
+                        <a href="https://www.coursera.org/account/accomplishments/verify/XN7UE7PDG5O0?utm_source%3Dandroid%26utm_medium%3Dcertificate%26utm_content%3Dcert_image%26utm_campaign%3Dsharing_cta%26utm_product%3Dcourse" target="_blank" class="text-emerald-400 hover:text-emerald-300 text-sm font-semibold">Verify Credential &#8599;</a>
+                    </div>
+                    
+                    <!-- Certificate 5: Asset threat and vollnerabilty -->
+                     <div class="bg-gray-800 p-6 rounded-xl border-l-4 border-emerald-500 shadow-md">
+                        <h3 class="text-xl font-bold text-white">5. Asset, Threat, and Vulnerability Management</h3>
+                        <p class="text-gray-400 mb-3">Coursera (Google/IBM/Equivalent)</p>
+                        <a href="https://www.coursera.org/account/accomplishments/verify/3U63OUJRE9LJ?utm_source%3Dandroid%26utm_medium%3Dcertificate%26utm_content%3Dcert_image%26utm_campaign%3Dsharing_cta%26utm_product%3Dcourse" target="_blank" class="text-emerald-400 hover:text-emerald-300 text-sm font-semibold">Verify Credential &#8599;</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-24 bg-gray-900 border-t border-gray-800">
+            <div class="max-w-xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-5xl font-extrabold text-white mb-4">Let's Connect</h2>
+                <p class="text-xl text-gray-300 mb-10">
+                    Ready to bring my foundational knowledge and drive to your team.
+                </p>
+                
+                <div class="bg-gray-800 p-8 rounded-xl shadow-2xl border border-emerald-600/30">
+                    <form class="space-y-6">
+                        <input type="text" placeholder="Name" class="w-full px-5 py-3 bg-gray-700 border border-gray-600 rounded-lg text-white focus:ring-emerald-500 focus:border-emerald-500" required>
+                        <input type="email" placeholder="Email" class="w-full px-5 py-3 bg-gray-700 border border-gray-600 rounded-lg text-white focus:ring-emerald-500 focus:border-emerald-500" required>
+                        <textarea rows="4" placeholder="Message/Job Inquiry" class="w-full px-5 py-3 bg-gray-700 border border-gray-600 rounded-lg text-white focus:ring-emerald-500 focus:border-emerald-500" required></textarea>
+                        <button type="submit" class="w-full py-3 px-6 text-lg font-bold text-white bg-emerald-600 rounded-full hover:bg-emerald-700 transition duration-300 shadow-xl shadow-emerald-500/30">
+                            Send Message
+                        </button>
+                    </form>
+                    <div class="mt-8">
+                        <p class="text-gray-400">Connect on LinkedIn or check out my GitHub:</p>
+                        <p class="text-lg font-medium text-emerald-400 mt-2">
+                             <a href="https://www.linkedin.com/in/shah-rukh-khan-521111348?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="hover:underline">Shah Rukh Khan's LinkedIn</a> | 
+                             <a href="https://github.com/shahrukhkhann138" target="_blank" class="hover:underline">Shah Rukh Khan's GitHub</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 border-t border-gray-800 py-6">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-gray-400 text-sm">
+            <p>&copy; 2025 Shah Rukh Khan. Cybersecurity Portfolio. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
+
